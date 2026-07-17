@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     char name[100];
     int age;
     float height;
@@ -15,7 +16,16 @@ int main() {
     printf("Enter your University name: ");
     scanf(" %[^\n]", uni_name);
 
-    printf("Hi! Everyone. This is K.%s from %s. I am %d years old and my height is %.01f cm tall.\n", name, uni_name, age, height);
+    char xa;
+    for (int i = 0; name[i] != '\0'; i++)
+    {
+        if (name[i] == ' ' && name[i + 1] != ' '){
+            xa = name[i + 1];
+            name[i] = '\0';}
+        
+    }
+
+    printf("Hi! Everyone. This is %c.%s from %s. I am %d years old and my height is %.01f cm tall.\n", xa, name, uni_name, age, height);
 
     return 0;
 }
