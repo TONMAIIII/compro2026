@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    float programming = 4;
+    float drawing = 3.5;
+    float mech = 3.5;
+    float math = 3;
+
+    printf("Programming: A\n");
+    printf("Drawing: B+\n");
+    printf("Mechanics: B+\n");
+    printf("Math: B\n");
+    printf("GPS: %.2f\n", (programming + drawing + mech + math) / 4);
+
+    return 0;
+}
