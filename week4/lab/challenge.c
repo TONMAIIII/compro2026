@@ -23,8 +23,6 @@ int main(){
             printf("Thank you for using the ATM.\n\n");
             break;
         }
-        
     }
-    
     return 0;
 }
